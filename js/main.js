@@ -1,5 +1,5 @@
 function verificar(){
-    var form = document.getElementById("form")
+
 
     let nome = document.getElementById("nome")
     let email = document.getElementById("email")
