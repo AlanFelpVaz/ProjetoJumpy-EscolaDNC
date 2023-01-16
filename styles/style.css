@@ -3,7 +3,6 @@
 *{
     background-color: #303030;
     font-family: 'Raleway';
-    color: #ffffff;
 }   
 
 header img{
@@ -21,28 +20,39 @@ header img{
     font-size: 30px;
     font-weight: 700;
     margin-bottom: 1.5em;
+    color: #ffffff;
 }
 #form {
     display: flex;
     flex-direction: column;
+    color: #ffffff;
 }
+
 #form label{
     font-size: 20px;
     font-weight: 500;
 }
+
 #form input{
     width: 34em;
     height: 2.4em;
-    padding: 11px 13px;
+    padding: 11px 80px 11px 15px;
     background-color: #ffffff;
     border-radius: 10px;
     margin-top: 7px;
     margin-bottom: 26px;
     border: none;
+    
 }
 #form input::placeholder{
     font-size: 15px;
     font-weight: 400;
+}
+#form input:hover{
+    box-shadow: 1px 1px 2px #0c70f1;
+}
+#form input:focus{
+    outline: none;
 }
 
 #form button{
@@ -52,5 +62,33 @@ header img{
     padding: 16px;
     border: none;
     border-radius: 10px;
+    margin-top: 2em;
     cursor: pointer;
+    color: #ffffff;
+}
+#form button:hover{
+    box-shadow: 1px 1px 3px gray;
+    -webkit-transform: scale(1);
+    transform: scale(1.01);
+    transition: 90ms;
+}
+.msgErro {
+    display: flex;
+    justify-content: end;
+    color: #E73550;
+    font-size: 12px;
+    margin-top:-20px;
+    font-weight: 500;
+}
+.msgBtnE {
+    color: #E73550;
+    font-size: 12px;
+    margin-top: 8px;
+    font-weight: 800;
+}
+.msgBtnS {
+    color: #0F7B0F;
+    font-size: 13px;
+    font-weight: 800;
+    margin-top: 8px;
 }

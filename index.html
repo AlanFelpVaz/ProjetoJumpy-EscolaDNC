@@ -6,21 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Login Jumpy - Formação Tecnologia </title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
 
 </head>
 
 <body>
 
     <header>
-        <img src="logoDnc.svg">
+        <img src="images/logoDnc.svg">
     </header>
 
     <div id="section">
 
         <div>
 
-            <img src="jumpy.svg">
+            <img src="images/jumpy.svg">
             <h2> Bem vindo ao Jumpy! </h2>
 
         </div>
@@ -28,26 +28,33 @@
         <form id="form">
 
             <label> Nome Completo: </label>
-            <input placeholder="Nome completo">
+            <input placeholder="Nome completo" type="text" name="nome" id="nome" class="cadastro" >
+            <span id="erro1" class="msgErro" ></span>
 
             <label> Email: </label>
-            <input placeholder="Email@email.com">
+            <input placeholder="Email@email.com" type="email" name="email" id="email" class="cadastro">
+            <span id="erro2" class="msgErro"></span>
 
             <label> Telefone: </label>
-            <input placeholder="(00) 00000-0000">
+            <input placeholder="(00) 00000-0000" type="tel" name="telefone" id="telefone" class="cadastro">
+            <span id="erro3" class="msgErro"></span>
 
             <label> CPF: </label>
-            <input placeholder="000.000.000-00">
+            <input placeholder="000.000.000-00" type="text" name="cpf" id="cpf" class="cadastro">
+            <span id="erro4" class="msgErro"></span>
 
             <label> Senha: </label>
-            <input placeholder="******************">
+            <input placeholder="******************" type="password" name="senha" id="senha">
+            <span id="erro5" class="msgErro"></span>
 
-            <button> Cadastrar </button>
-
+            <button type="button" onclick="verificar()"> Cadastrar </button>
+            <span id="erroBtn" ></span>
         </form>
 
     </div>    
 
 </body>
+
+    <script src="js/main.js"></script>
 
 </html>
