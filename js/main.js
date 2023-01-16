@@ -1,5 +1,3 @@
-var form = document.getElementById("form")
-
 function verificar(){
     var form = document.getElementById("form")
 
@@ -11,6 +9,15 @@ function verificar(){
 
     const btnSpan = document.querySelector('#erroBtn')
 
+    let msgErro = document.querySelectorAll('form .cadastro');
+
+    if(msgErro.length > 0){
+        document.querySelector('#erro1').textContent = ``;
+        document.querySelector('#erro2').textContent = ``;
+        document.querySelector('#erro3').textContent = ``;
+        document.querySelector('#erro4').textContent = ``;
+        document.querySelector('#erro5').textContent = ``;
+    }
 
     if (nome.value == '') {
         document.querySelector('#erro1').textContent = `'Campo Obrigatório'`;
@@ -43,5 +50,8 @@ function verificar(){
         btnSpan.classList.add('msgBtnS')
         document.querySelector('#erroBtn').textContent = `Sucesso!`
     }
+
+    
+
 
 }
