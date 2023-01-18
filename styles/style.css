@@ -22,6 +22,8 @@ header img{
     margin-bottom: 1.5em;
     color: #ffffff;
 }
+
+/* estilo dos inputs */
 #form {
     display: flex;
     flex-direction: column;
@@ -56,6 +58,7 @@ header img{
     outline: none;
 }
 
+/* estilo do botão */
 #form button{
     background-color: #0c70f1;
     font-size: 18px;
@@ -73,6 +76,8 @@ header img{
     transform: scale(1.01);
     transition: 90ms;
 }
+
+/* mensagem de erro em baixo dos inputs */
 .msgErro {
     display: flex;
     justify-content: end;
@@ -81,9 +86,11 @@ header img{
     margin-top:-20px;
     font-weight: 500;
 }
+
+/* mensagem de erro e sucesso em baixo do botão*/
 .msgBtnE {
     color: #E73550;
-    font-size: 12px;
+    font-size: 13px;
     margin-top: 8px;
     font-weight: 800;
 }
@@ -92,4 +99,66 @@ header img{
     font-size: 13px;
     font-weight: 800;
     margin-top: 8px;
+}
+
+/* media query */
+
+@media only screen and (max-width: 850px){
+    body {
+        display: grid;
+        grid-auto-flow: row;
+    }
+    header {
+       display: flex;
+       justify-content: space-around;
+    }
+
+    #section {
+        margin-top: 4em;
+    }
+
+    #form label{
+        text-align: center;
+    }
+
+    #form input{
+        width: 20rem;
+        height: 2.4em;
+        background-color: #fffffff6;
+    }
+
+
+    #form button{
+        margin-bottom: 2em;
+    }
+}
+
+@media only screen and (max-width: 435px){
+    body {
+        display: grid;
+        grid-auto-flow: row;
+    }
+    header {
+       display: flex;
+       justify-content: space-around;
+    }
+
+    #section {
+        margin-top: 4em;
+    }
+
+    #form label{
+        text-align: center;
+    }
+
+    #form input{
+        width: 15rem;
+        height: 2em;
+        background-color: #fffffff6;
+    }
+
+
+    #form button{
+        margin-bottom: 2em;
+    }
 }
