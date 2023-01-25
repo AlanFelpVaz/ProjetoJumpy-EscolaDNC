@@ -28,6 +28,7 @@ header img{
     display: flex;
     flex-direction: column;
     color: #ffffff;
+    margin-bottom: 25px;
 }
 
 #form label{
@@ -88,13 +89,13 @@ header img{
 }
 
 /* mensagem de erro e sucesso em baixo do botão*/
-.msgBtnE {
+.msgBtnErro {
     color: #E73550;
     font-size: 13px;
     margin-top: 8px;
     font-weight: 800;
 }
-.msgBtnS {
+.msgBtnSucesso {
     color: #0F7B0F;
     font-size: 13px;
     font-weight: 800;
@@ -120,7 +121,6 @@ header img{
     #form label{
         text-align: center;
     }
-
     #form input{
         width: 20rem;
         height: 2.4em;
@@ -150,13 +150,11 @@ header img{
     #form label{
         text-align: center;
     }
-
     #form input{
         width: 15rem;
         height: 2em;
         background-color: #fffffff6;
     }
-
 
     #form button{
         margin-bottom: 2em;
