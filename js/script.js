@@ -16,6 +16,7 @@ const spanBtn = document.querySelector('#spanBtn');
 
 function mostrarErroBtn(){
     spanBtn.innerHTML = "Campos obrigatórios não registrados.";
+    spanBtn.classList.remove('msgBtnSucesso');
     spanBtn.classList.add('msgBtnErro');
 }
 
